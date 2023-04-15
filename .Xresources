@@ -37,21 +37,26 @@
 *.color7:       #c5c8c6
 *.color15:      #ffffff
 
-! urxvt
-URxvt*buffered: false
+! urxvt appearance settings
+URxvt.geometry: 92x66
 URxvt*cursorBlink: true
-URxvt*underlineColor: yellow
-URxvt*font:  xft:inconsolata:size=14:antialias=true
-URxvt*depth: 32
-URxvt*borderless: 1
+URxvt.cursorUnderlane: true
 URxvt*scrollBar: false
-URxvt*loginShell: true
-Urxvt*secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
+URxvt*depth: 32
 URxvt*saveLines: 5000
-URxvt*termName: rxvt-unicode
+URxvt*font:  xft:inconsolata:size=14:antialias=true
+URxvt*underlineColor: yellow
+URxvt*borderless: 1
 URxvt.transparent: True
 URxvt.shading: 20
 
-!!! URxvt.perl-ext-common: default,matcher
+! urxvt other extenstions
+URxvt.perl-ext-common: default,matcher,clipboard,url-select,keyboard-select
+URxvt*loginShell: true
+Urxvt*secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
+URxvt*termName: rxvt-unicode
+
+! urxvt unsued configs
+!!! URxvt*buffered: false
 !!! URxvt.urlLauncher: librewolf
 !!! URxvt.matcher.button: 1
